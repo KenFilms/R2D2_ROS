@@ -15,10 +15,6 @@ Here is a list of planned features for the heavily modefied robot (hardware and 
 ## Modifications to original hardware
 The original main controller seems to be Orange Pi Zero Plus 2 H5 (https://forum.deagostini.co.uk/?g=posts&t=30073). It has a H5 Quad-core Cortex-A53 with around 1,3GHz. and 512MB DDR2 RAM (sared with GPU) and all bunch of nice features, such as WiFi, camera-support, HDMI etc. Unfortunately, the system seems to be closed, so we cannot just flash new software unto the device. So one way of replacing it, would be just to purchase an "open" Orange Pi Zero, but I wanted to have a more powerful main controller with higher CPU frequency and more customizable, such as adding M2 SSD storage. So I decided for an "old" Intel NUC MYHE Kit, which I had bought a few years ago and it was lying around in my drawer...probably for that reason. Now, with more power coms not only more responsibility ;) but also considerably bigger dimensions and also higher energy consumption. While the Orangi Pi is only about 48mm x 46mm and relatuvey flat, the stripped Intel NUC
 
-## Energy supply
-This is a whole big topic. I had previously build a smaller R2D2 using a raspberry Pi and 
-
-
 
 ## Additional hardware
 * Intel 5th Gen NUC Core i5-5300U, NUC5I5MYHE. This replaces the Orangpi Pi Zero.
@@ -35,3 +31,6 @@ This is a whole big topic. I had previously build a smaller R2D2 using a raspber
 ## Reverse engineered communication between ROS and hardware controller
 "Dald DDe" on YouTube did some amazing reverse engineering work on the signals being send from the Orange Pi main controller boaard to the hardware controllers. 
 He created a list of commands accepted by the hardware controller: https://pastebin.com/ij5brpVd by uart sniffing. The code for UART sniffing and also a video explaining the wiring can be found here: https://pastebin.com/MRx4fzs5. https://www.youtube.com/watch?v=fD6QIEKGQrY&t=0s 
+
+## Energy supply
+This is a whole big topic. I had previously build a smaller R2D2 using a raspberry Pi and found out it's crucial to sperate the supply for the controller baords and motors because large fluctuations in the supply voltage created by the motors cannot be handled well by controller boards. The original power supply of DeAgostini was designed quite well incorporating the principle of separated power supplies However, due to changing to the intel NUC, I needed a bigger battery overall, being able to supply 19V and quite a few Amps when running energy-intensive computations being at full speed with the motors. So I decided for the Laptop Portable Power Bank 5V 12V 16V 19V 30000mAh. Unfortunately, this power bank does not fit into the torso qithout modification. So either I solder around with LiPo batteries, which only experts should so. Or I have to fit it into a sort of small "backpack" for R2.
