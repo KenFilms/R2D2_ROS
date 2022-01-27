@@ -1,6 +1,5 @@
 # R2D2 ROS Work-in-Progress
-After purchasing a used DeAgostini R2D2 off EBay for a good price, and playing around, I got a bit bored of the limited functionality. There is so much more potential in the quite nice overall hardware of the robot. So I decided to give it a atry and extend the capabilities to make R2D2 actually a bit more of a robot with some intelligence. Thus making this toy not only more fun to interact with, but also more useful.\
-
+After purchasing a used DeAgostini R2D2 off EBay for a good price, and playing around, I got a bit bored of the limited functionality. There is so much more potential in the quite nice overall hardware of the robot. So I decided to give it a atry and extend the capabilities to make R2D2 actually a bit more of a robot with some intelligence. Thus making this toy not only more fun to interact with, but also more useful.
 
 
 ![Alt R2D2_front](images/R2D2_overview.jpg?raw=true "R2D2_overview")
