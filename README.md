@@ -21,13 +21,15 @@ This is a whole big topic. I had previously build a smaller R2D2 using a raspber
 
 
 ## Additional hardware
-* Intel 5th Gen NUC Core i5-5300U, NUC5I5MYHE. This replaces the 
-https://www.ydlidar.com/products/view/5.html 
+* Intel 5th Gen NUC Core i5-5300U, NUC5I5MYHE. This replaces the Orangpi Pi Zero.
+* RESP MIC 2.0 ReSpeaker Mic Array v2.0. This microphone array will be able to record voices more clearly than a single microphone which came as part of the orginal SeAgostini kit. Additionally, we can get the direction of sound probably by beam forming. https://www.reichelt.de/de/de/respeaker-mic-array-v2-0-resp-mic-2-0-p248721.html?r=1 
+* Modified YLidar X4 https://www.ydlidar.com/products/view/5.html. For perfoming SLAM, it's the easiest to get this job done by using a Lidar sensor. I was giving it quite a thought how to get it mounted onto the robot without manipulating the overall R2D2 harmonic design too much. At the same time, I wanted to get a range covering angle which is big enough to get reasonably enough data for SLAM. Especially considering that we'd like only use the lidar signals withut odometry e.g. potentionally from encoders in the wheels of the robot. Without disassembling the wheel motors, I don't actually know if there are any encoders inside or if it's just open loop control of stepper motors. Even if there would be encoders, we'd to wire it up from the hardware controller board all the way up to the head which is rotating. So, the best would be to only use the lidar for SLAM. Finally, I mounted it onto the lower front. It looks a bit weird, admittedly. https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/ . As you can see on the photos, I modified the YLidar X4 so that the motor is mounted onto the same side as the laser to achieve a flatter oervall design. Also I painted the orginally blue and black pastic white to match the designand black to prevent laser reflections. 
+* Modified Genius 120 Degree Ultra Wide Angle Full HD. I stripped the plastic cover and cut down the unnecessary audio recording part of the PCB. This had to be done to fir the limited dimensions for mounting it behind the "eye" of R2D2.
+* Two micro servos to move two of the opposing blue head plates.
+* more stuff, like USB contollers, wiring, screws, aluminium mounting plates, servos for the opening cooling windows in the head. cpu fan for cooling the main CPU, USB to TTL conversion board, etc. 
 
 ![Alt R2D2_front](images/R2D2_front.jpg?raw=true "R2D2_front")
 ![Alt R2D2_front](images/R2D2_details.jpg?raw=true "R2D2_details")
-
-## Lidar Modifications
 
 ![Alt R2D2_front](images/R2D2_lidar.jpg?raw=true "R2D2_lidar")
 
