@@ -30,9 +30,8 @@ This is a whole big topic. I had previously build a smaller R2D2 using a raspber
 
 ![Alt R2D2_front](images/R2D2_front.jpg?raw=true "R2D2_front")
 ![Alt R2D2_front](images/R2D2_details.jpg?raw=true "R2D2_details")
-
 ![Alt R2D2_front](images/R2D2_lidar.jpg?raw=true "R2D2_lidar")
 
 ## Reverse engineered communication between ROS and hardware controller
-
-He managed to reverse engineer the commands to be accepted by the hardware controller: https://pastebin.com/ij5brpVd by uart sniffing. The code for UART sniffing and also a video explaining the wiring can be found here: https://pastebin.com/MRx4fzs5. https://www.youtube.com/watch?v=fD6QIEKGQrY&t=0s 
+"Dald DDe" on YouTube did some amazing reverse engineering work on the signals being send from the Orange Pi main controller boaard to the hardware controllers. 
+He created a list of commands accepted by the hardware controller: https://pastebin.com/ij5brpVd by uart sniffing. The code for UART sniffing and also a video explaining the wiring can be found here: https://pastebin.com/MRx4fzs5. https://www.youtube.com/watch?v=fD6QIEKGQrY&t=0s 
