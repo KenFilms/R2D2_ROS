@@ -18,6 +18,8 @@ Here is a list of planned features for the heavily modefied robot (hardware and 
 ## Replacing original controller board
 According to "kombat" on the Desgostini R2D2 forum, he stated that main controller seems to be Orange Pi Zero Plus 2 H5 (https://forum.deagostini.co.uk/?g=posts&t=30073). It has a H5 Quad-core Cortex-A53 with around 1,3GHz. and 512MB DDR2 RAM (sared with GPU) and all bunch of nice features, such as WiFi, camera-support, HDMI etc. Unfortunately, the system seems to be closed, so we cannot just flash new software unto the device. So one way of replacing it, would be just to purchase an "open" Orange Pi Zero, but I wanted to have a more powerful main controller with higher CPU frequency and more customizable, such as adding M2 SSD storage. So I decided for an "old" Intel NUC MYHE Kit, which I had bought a few years ago and it was lying around in my drawer...probably for that reason. Now, with more power coms not only more responsibility ;) but also considerably bigger dimensions and also higher energy consumption. While the Orangi Pi is only about 48mm x 46mm and relatuvey flat, the stripped Intel NUC.
 
+![Alt electronic_control_scheme](images/R2D2_electronics.jpg?raw=true "R2D2_electronics")
+
 ## Additional hardware
 * Intel 5th Gen NUC Core i5-5300U, NUC5I5MYHE. This replaces the Orangpi Pi Zero.
 * RESP MIC 2.0 ReSpeaker Mic Array v2.0. This microphone array will be able to record voices more clearly than a single microphone which came as part of the orginal SeAgostini kit. Additionally, we can get the direction of sound probably by beam forming. https://www.reichelt.de/de/de/respeaker-mic-array-v2-0-resp-mic-2-0-p248721.html?r=1 
